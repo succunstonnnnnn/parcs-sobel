@@ -1,4 +1,3 @@
-# Порівнює два PNG піксель у піксель. Використання: python3 compare.py a.png b.png
 import sys
 import numpy as np
 from PIL import Image

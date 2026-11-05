@@ -1,8 +1,7 @@
-# Будує графік results.png з results.json (час від кількості воркерів).
 import json
 import os
 import matplotlib
-matplotlib.use("Agg")                      # без вікна, просто зберегти у файл
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
