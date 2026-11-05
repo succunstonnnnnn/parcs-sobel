@@ -97,9 +97,9 @@ python3 -m venv .venv && .venv/bin/pip install numpy pillow matplotlib
 - Фаєрвол `parcs-web` пускає на порти 8080 і 22 лише з вашої IP, тому з іншої мережі веб-інтерфейс не відкриється. Повторіть `./scripts/start.sh` або оновіть правило вручну.
 - Ціна: приблизно $0,25–0,30 за годину за 5 × e2-medium; у зупиненому стані коштують лише диски.
 
-[СКРІНШОТ: сторінка Compute Engine → VM instances, де видно parcs-master і parcs-worker-1..4 зі статусом RUNNING]
+![VM instances у консолі GCP: master і 4 воркери зі статусом RUNNING](screenshots/vm-instances.png)
 
-[СКРІНШОТ: веб-інтерфейс PARCS `http://<IP master>:8080/workers` зі списком із 4 воркерів]
+![Веб-інтерфейс PARCS, сторінка Nodes: 4 зареєстровані воркери](screenshots/parcs-workers.png)
 
 ## 4. Результати
 
@@ -127,7 +127,9 @@ python3 -m venv .venv && .venv/bin/pip install numpy pillow matplotlib
 
 Суцільна лінія: PARCS, середнє з 3 запусків; пунктир: послідовна версія.
 
-[СКРІНШОТ: вивід запуску `scripts/benchmark.py` у терміналі (рядки «N=1, запуск 1: ... c» і «ЗБІГАЄТЬСЯ»)]
+![Вивід scripts/benchmark.py: час для послідовної версії і N=1..4, перевірка збіжності](screenshots/benchmark-output.png)
+
+![Веб-інтерфейс PARCS, сторінка Jobs: виконані задачі SOBEL](screenshots/parcs-jobs.png)
 
 Вхідне й результуюче зображення (`images/input.png` і `images/output.png`):
 
